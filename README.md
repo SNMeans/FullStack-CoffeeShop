@@ -63,5 +63,10 @@ npm start
 ```
 4) Navigate to http://localhost:3000 in your browser to view the site.
 
-## Future En
+## Future Enhancements
+- Integration of AI for personalized recommendations: Plan to leverage machine learning to offer personalized coffee and event recommendations based on user preferences.
+- Expansion of payment options: Include more diverse payment methods to accommodate a broader user base.
+
+## Conclusion
+This project highlights my ability to integrate multiple technologies to create a comprehensive, user-friendly service. Flo's Cafe is poised to transform how coffee lovers interact with mobile coffee services, making it easier than ever to enjoy their favorite brews or plan coffee-themed events.
 
