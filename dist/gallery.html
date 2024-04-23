@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Map -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" />
+    
+    <!-- 
+      Color mode switch
+      - For demonstration purposes only
+      - If you do not have the possibility to store user preferences on the backend, I highly recommend switching to a media query implementation: https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass
+    -->
+    <script>
+      (() => {
+        window.addEventListener('DOMContentLoaded', () => {
+          const colorModeSwitch = document.getElementById('colorModeSwitch');
+          if (colorModeSwitch) {
+            colorModeSwitch.addEventListener('change', () => {
+              document.body.setAttribute('data-bs-theme', colorModeSwitch.checked ? 'dark' : 'light');
+            });
+          }
+        });
+      })();
+    </script>
+    
+    <!-- Title -->
+    <title>Touché - Café &amp; Restaurant Template</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-togglable fixed-top">
+      <div class="container">
+        <!-- Navbar brand (mobile) -->
+        <a class="navbar-brand d-lg-none" href="./index.html">Touché</a>
+    
+        <!-- Navbar toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!-- Navbar nav -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="./about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./reservation.html">Reservation</a>
+            </li>
+          </ul>
+    
+          <!-- Navbar brand -->
+          <a class="navbar-brand d-none d-lg-flex mx-lg-auto" href="./index.html"> Touché </a>
+    
+          <!-- Navbar nav -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " href="./news-and-events.html">News & Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./contact-us.html">Contact</a>
+            </li>
+          </ul>
+    
+          <!-- Color mode -->
+          <div class="form-check form-switch form-switch-color-mode ms-lg-3">
+            <input class="form-check-input" type="checkbox" role="switch" id="colorModeSwitch" />
+            <label class="form-check-label" for="colodeModeSwitch"></label>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header data-jarallax data-speed=".8" style="background-image: url(assets/img/23.jpg)">
+      <div class="pt-10 pb-8 pt-md-15 pb-md-13 bg-black bg-opacity-50">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6 text-center">
+              <!-- Heading -->
+              <h1 class="display-6 fw-bold text-white">Our Gallery</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- CAROUSEL -->
+    <section class="pt-7 pt-md-9">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h2 class="mb-2">Take a sneak peek</h2>
+
+            <!-- Subheading -->
+            <p class="mb-6">
+              Asperiores temporibus fuga possimus labore ex porro pariatur sed, nisi dolor, nobis architecto. Placeat facilis voluptas alias ducimus.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- Carousel -->
+            <div data-flickity='{"wrapAround": true, "imagesLoaded": true}'>
+              <figure class="w-100">
+                <!-- Image -->
+                <img class="img-fluid mb-4" src="assets/img/33.jpg" alt="..." />
+
+                <!-- Caption -->
+                <figcaption class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit 🥰</figcaption>
+              </figure>
+              <figure class="w-100">
+                <!-- Image -->
+                <img class="img-fluid mb-4" src="assets/img/35.jpg" alt="..." />
+
+                <!-- Caption -->
+                <figcaption class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit 🥰</figcaption>
+              </figure>
+              <figure class="w-100">
+                <!-- Image -->
+                <img class="img-fluid mb-4" src="assets/img/36.jpg" alt="..." />
+
+                <!-- Caption -->
+                <figcaption class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit 🥰</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="py-7 py-md-9">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h2 class="mb-2">Our gallery</h2>
+
+            <!-- Subheading -->
+            <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="row gx-3" data-isotope>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/11.jpg" }'>
+              <img class="img-fluid" src="assets/img/11.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/16.jpg" }'>
+              <img class="img-fluid" src="assets/img/16.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/13.jpg" }'>
+              <img class="img-fluid" src="assets/img/13.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/15.jpg" }'>
+              <img class="img-fluid" src="assets/img/15.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/14.jpg" }'>
+              <img class="img-fluid" src="assets/img/14.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/18.jpg" }'>
+              <img class="img-fluid" src="assets/img/18.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/17.jpg" }'>
+              <img class="img-fluid" src="assets/img/17.jpg" alt="..." />
+            </a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4">
+            <!-- Item -->
+            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/12.jpg" }'>
+              <img class="img-fluid" src="assets/img/12.jpg" alt="..." />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="py-7 py-md-9 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6 text-center">
+            <!-- Heading -->
+            <h2 class="mb-2">Newsletter</h2>
+
+            <!-- Subheading -->
+            <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo praesentium sequi in cum, beatae maiores quae qui.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <!-- Begin Mailchimp Signup Form -->
+            <div id="mc_embed_signup">
+              <form
+                action="https://gmail.us6.list-manage.com/subscribe/post?u=c7b7808bb5a16b9f09c4e1fe0&amp;id=96b8442f9a"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                target="_blank"
+                novalidate
+              >
+                <div class="row justify-content-center gx-3" id="mc_embed_signup_scroll">
+                  <div class="col">
+                    <label class="visually-hidden" for="mce-EMAIL">Email Address </label>
+                    <input class="form-control" type="email" value="" name="EMAIL" id="mce-EMAIL" />
+                  </div>
+                  <div class="visually-hidden" id="mce-responses">
+                    <div class="response" id="mce-error-response" style="display: none"></div>
+                    <div class="response" id="mce-success-response" style="display: none"></div>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px" aria-hidden="true">
+                    <input type="text" name="b_c7b7808bb5a16b9f09c4e1fe0_96b8442f9a" tabindex="-1" value="" />
+                  </div>
+                  <div class="col-auto">
+                    <input class="btn btn-outline-primary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!--End mc_embed_signup-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-7 py-md-9 bg-black">
+      <div class="container px-4">
+        <div class="row gx-7">
+          <div class="col-sm-4">
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">About Us</h5>
+    
+            <!-- Text -->
+            <p class="mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum, sint corporis nostrum, possimus unde eos vitae eius quasi saepe.
+            </p>
+          </div>
+          <div class="col-sm-4">
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">Contact info</h5>
+    
+            <!-- List -->
+            <ul class="list-unstyled mb-6">
+              <li class="d-flex mb-2">
+                <div class="fas fa-map-marker-alt me-3 mt-2 fs-sm"></div>
+                1234 Altschul, Los Angeles, CA 10027-0000
+              </li>
+              <li class="d-flex mb-2">
+                <div class="fas fa-phone me-3 mt-2 fs-sm"></div>
+                +1 987 654 3210
+              </li>
+              <li class="d-flex">
+                <div class="far fa-envelope me-3 mt-2 fs-sm"></div>
+                <a href="mailto:admin@domain.com">admin@domain.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <!-- Heading -->
+            <h5 class="text-xs text-primary">Opening hours</h5>
+    
+            <!-- Text -->
+            <div class="mb-3">
+              <div class="text-xs">Monday - Thursday</div>
+              <div class="font-serif">10:00 AM - 11:00 PM</div>
+            </div>
+    
+            <!-- Text -->
+            <div class="mb-6">
+              <div class="text-xs">Friday - Sunday</div>
+              <div class="font-serif">12:00 AM - 03:00 AM</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!-- Copyright -->
+            <div class="d-flex align-items-center">
+              <hr class="hr-sm me-3" style="height: 1px" />
+              &copy; 2021 Touché. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- TOAST -->
+    <div class="toast position-fixed bottom-0 start-50 translate-middle-x mb-3 mb-md-5" id="notification" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body mx-auto"></div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+  </body>
+</html>
