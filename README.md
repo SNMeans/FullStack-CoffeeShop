@@ -25,7 +25,7 @@ Flo's Cafe is an innovative web platform designed for a mobile coffee shop that 
 - Real-time Updates: Leveraging Node.js, the site provides real-time updates on order status and event bookings.
 
 ## Enhancements from Template
-The original Touche template provided a robust starting point with features like a dark mode toggle, a Mailchimp-powered newsletter, and pre-designed sections for various needs. Here are enhancements specific to Flo's Cafe:
+The original Touche template provided a great starting point with features like a dark mode toggle, a Mailchimp-powered newsletter, and pre-designed sections for various needs. Here are enhancements specific to Flo's Cafe:
 
 - Custom Backend: Developed a custom Node.js backend to replace the template's contact and reservation functionality, improving performance and scalability.
 - Dynamic Sorting: Enhanced the user interface with dynamic sorting capabilities for products based on popularity and price using JavaScript and Node.js.
